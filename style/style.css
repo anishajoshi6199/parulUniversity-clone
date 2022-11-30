@@ -1,0 +1,867 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 0.6rem;
+}
+
+/*============ navbar =============*/
+.upesLogo {
+  display: flex;
+}
+
+.upesLogo > img {
+  width: 18rem;
+}
+/*=========== Hero ============*/
+
+.heroMain {
+  background-image: linear-gradient(rgba(235, 0, 0, 0.9), rgba(235, 0, 0, 0.9)),
+    url(../images/bg_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+}
+
+.hero {
+  display: flex;
+  gap: 6rem;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem;
+}
+
+.heroLeftHeading > img {
+  border-radius: 20px;
+  width: 28rem;
+}
+
+.heroRight > iframe {
+  border-radius: 10px;
+}
+
+/*=================== heroBottom =================*/
+
+.heroBottom {
+  padding: 10px 0 10px;
+  text-align: center;
+}
+
+.heroBottom > h2 {
+  color: rgb(245, 38, 38);
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.heroBottom > h4 {
+  color: rgb(223, 66, 66);
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.heroBottom > p {
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+}
+
+/*================= Achivements =================*/
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.course-col > h2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 5rem;
+}
+
+.course-col > p {
+  color: darkslategray;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+
+.course-col > h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 2);
+}
+
+/*============================ AppLogos ==============================*/
+.appLogo {
+  align-items: center;
+}
+
+.appLogo .brands {
+  align-items: center;
+  cursor: pointer;
+}
+
+.brandsLogo {
+  transition: 1s;
+  margin: 0.5rem;
+}
+.brandsLogo:hover {
+  transform: scale(1.5);
+  z-index: 2;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+}
+
+.brands > img {
+  width: 10%;
+}
+
+/*=============== achive ===============*/
+
+.achiveMain {
+  background-image: linear-gradient(rgba(220, 0, 0, 0.9), rgba(220, 0, 0, 0.9)),
+    url(../images/bg_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.achiveMain {
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+  align-items: center;
+}
+
+.achiveTxt > h3 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.achiveTxt > h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 350;
+}
+
+.achiveTxt > h4 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+/*-------------------------- campus -------------------------*/
+
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus > h1 {
+  color: rgb(245, 38, 38);
+  font-size: 50px;
+}
+
+.campus > p {
+  color: rgb(206, 10, 10);
+  font-size: 20px;
+}
+
+.campus-col > h3 {
+  color: rgb(163, 8, 8);
+}
+
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col img {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 500px;
+}
+
+.Layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+}
+
+.Layer:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+
+.Layer h3 {
+  width: 100%;
+  font-weight: 300;
+  color: white;
+  font-size: 20px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.Layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/* culture */
+
+.culture {
+  background-image: linear-gradient(rgba(220, 0, 0, 0.9), rgba(220, 0, 0, 0.9)),
+    url(../images/bg_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 3rem;
+}
+
+.cultureTxt {
+  color: #fff;
+}
+
+.cultureTxt > h2 {
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.cultureTxt > h3 {
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*============ International  =============*/
+
+.International {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.internationalMain > h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: red;
+}
+
+.internationalMain > h4 {
+  font-size: 30px;
+  font-weight: 300;
+  color: brown;
+}
+
+.interBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem;
+}
+
+.internationalTxt > h2 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 3rem;
+  color: red;
+}
+
+.internationalTxt > h4 {
+  font-size: 25px;
+  font-weight: 400;
+  color: brown;
+}
+
+.interNum {
+  transition: 1s;
+  margin: 0.5rem;
+}
+
+.interNum:hover {
+  transform: scale(1.4);
+  z-index: 2;
+}
+/* Images */
+
+.imgBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.startImg > h3 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.startImg > h2 {
+  font-size: 18px;
+}
+
+.startImg > img {
+  width: 20rem;
+}
+
+.startImg {
+  transition: 1s;
+  margin: 0.5rem;
+}
+.startImg:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+/*------ buttom ------*/
+.button{
+  border: 1.9px solid black;
+  background-color: red;
+  border-radius: 4rem;
+  padding: 5px;
+  width: 8rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  cursor: pointer;
+
+}
+.button > a{
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+/*============= footer  ==============*/
+
+.footer {
+  background-color: rgb(10, 10, 10);
+  padding: 20px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col > ul {
+  list-style: none;
+}
+
+.footer-col > h4 {
+  font-size: 23px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col > ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col > ul > li > a {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 200;
+  color: #bbb;
+  display: block;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.footer-col > ul > li > a:hover {
+  color: #fff;
+  padding-left: 10px;
+}
+
+.social-links > a {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-right: 10px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.5s ease;
+}
+
+.social-links > a:hover {
+  color: #fff;
+}
+
+.footerTxt {
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.footer-col > img {
+  width: 13rem;
+}
+
+/* ----------------- */
+/* Media Queries */
+/* ----------------- */
+
+
+@media screen and (max-width: 1024px) {
+
+  /* navBar */
+  
+  .navBar{
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  /* achive */
+  .achiveMain > .achiveTxt > h3 {
+    font-size: 45px;
+  }
+
+  .achiveMain > .achiveTxt > h1 {
+    font-size: 25px;
+  }
+
+  .achiveMain > .achiveTxt > h1 {
+    font-size: 22px;
+  }
+
+  /* images */
+
+  .startImg > img {
+    width: 15rem;
+  }
+
+  .startImg > h2 {
+    font-size: 1rem;
+  }
+
+  .startImg > h3 {
+    font-size: 0.6rem;
+  }
+
+  /* footer */
+
+  .footer-col > h4 {
+    font-size: 17px;
+  }
+
+  .footer-col > ul > li > a {
+    font-size: 13px;
+  }
+
+  /* International */
+
+  .internationalMain > h2 {
+    font-size: 40px;
+  }
+
+  .internationalMain > h4 {
+    font-size: 22px;
+  }
+
+  .internationalTxt > h2 {
+    font-size: 35px;
+  }
+
+  .internationalTxt > h4 {
+    font-size: 18px;
+  }
+
+  /* culture */
+
+  .cultureTxt > h2 {
+    font-size: 50px;
+  }
+
+  .cultureTxt > h3 {
+    font-size: 20px;
+  }
+
+  /* Achivements */
+
+  .campus > h1 {
+    font-size: 50px;
+  }
+
+  .Layer > h3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  /*  */
+
+  .course-col {
+    flex-basis: 35%;
+  }
+
+  .course-col > p {
+    font-size: 14px;
+  }
+
+  .course-col > h3 {
+    font-size: 16px;
+  }
+
+  .course-col > img {
+    width: 5rem;
+  }
+
+  .heroBottom > h2 {
+    font-size: 45px;
+  }
+
+  .heroBottom > p {
+    font-size: 16px;
+  }
+
+  .heroImg {
+    width: 23rem;
+  }
+
+  /* hero */
+
+  .heroLeftHeading > img {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  .upesLogo > img {
+    width: 12rem;
+  }
+
+  /* hero */
+  .heroLeftHeading > img {
+    width: 20rem;
+    padding-left: 2rem;
+  }
+
+  .heroRight > iframe {
+    height: 30rem;
+    width: 20rem;
+  }
+
+  /* achive */
+
+  .achiveMain {
+    padding: 6rem;
+  }
+
+  /* culture */
+  .cultureTxt > h2 {
+    font-size: 2rem;
+  }
+
+  .cultureTxt > h3 {
+    font-size: 1rem;
+  }
+
+  /* Images */
+
+  .startImg > img {
+    width: 12rem;
+  }
+  /* footer */
+
+  .footer-col > img {
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  /* Navbar */
+  .navBar{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .upesLogo > img {
+    width: 8rem;
+    padding: 1px;
+  }
+
+  /* Hero */
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .heroLeftHeading > img {
+    width: 25rem;
+    padding-left: 2px;
+  }
+
+  .heroRight > iframe {
+    height: 50rem;
+    width: 25rem;
+  }
+
+  /* Achivements */
+
+  .heroBottom > h2 {
+    font-size: 3rem;
+  }
+
+  .heroBottom > p {
+    font-size: 13px;
+  }
+  .heroImg {
+    width: 20rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  /* AppLogos */
+
+  .brandsLogo > img {
+    width: 2px;
+    height: 2px;
+  }
+
+  /* achive */
+
+  .achiveMain {
+    flex-direction: column;
+  }
+
+  .achiveImg > img {
+    width: 15rem;
+  }
+
+  .achiveTxt > h3 {
+    font-size: 3rem;
+  }
+
+  .achiveTxt > h1 {
+    font-size: 1rem;
+  }
+
+  /* campus */
+
+  .campus > h1 {
+    font-size: 35px;
+  }
+
+  .campus > p {
+    font-size: 15px;
+  }
+
+  .campus-col > img {
+    width: 350px;
+  }
+
+  /* International */
+
+  .internationalMain > h2 {
+    font-size: 2rem;
+  }
+
+  .internationalMain > h4 {
+    font-size: 1rem;
+  }
+
+  .interBox {
+    margin: 1rem;
+  }
+
+  /* Images */
+
+  .startImg > img {
+    width: 20rem;
+  }
+
+  .startImg > h2 {
+    font-size: 1rem;
+  }
+
+  .startImg > h3 {
+    font-size: 1rem;
+  }
+
+  /* footer */
+
+  .footerTxt {
+    font-size: 12px;
+  }
+
+  .footer-col > img {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* Navbar */
+
+  .navBar {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .upesLogo > img {
+    width: 7rem;
+    padding: 1px;
+  }
+
+  .heroLeftHeading > img {
+    width: 17rem;
+  }
+
+  .heroRight > iframe {
+    height: 40rem;
+    width: 18rem;
+  }
+
+  .heroBottom > h2 {
+    font-size: 2rem;
+  }
+
+  .heroBottom > h4 {
+    font-size: 19px;
+  }
+
+  .heroBottom > p {
+    font-size: 12px;
+  }
+
+  .heroImg {
+    width: 15rem;
+  }
+
+  .achiveImg > img {
+    width: 12rem;
+  }
+
+  .achiveMain > .achiveTxt > h3 {
+    font-size: 29px;
+  }
+
+  .achiveMain > .achiveTxt > h1 {
+    font-size: 15px;
+  }
+
+  .achiveTxt > h4 {
+    font-size: 20px;
+  }
+
+  .campus > h1 {
+    font-size: 30px;
+  }
+
+  .campus > p {
+    font-size: 12px;
+  }
+
+  .campus-col > img {
+    width: 250px;
+  }
+
+  .cultureTxt > h2 {
+    font-size: 1rem;
+  }
+
+  .cultureTxt > h3 {
+    font-size: 12px;
+    padding-left: 1rem;
+  }
+
+  .startImg > h3 {
+    font-size: 15px;
+    padding-left: 1rem;
+  }
+
+  .footer-col > img {
+    width: 17rem;
+  }
+}
